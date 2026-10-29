@@ -219,6 +219,10 @@ export default function Home() {
       </section>
 
       {/* Projects */}
+      
+
+```tsx
+      {/* Projects */}
       <section
         id="projects"
         className="mx-auto max-w-6xl scroll-mt-24 px-6 py-20"
@@ -226,58 +230,121 @@ export default function Home() {
         <p className="font-medium tracking-widest text-cyan-400">
           SELECTED WORK
         </p>
+
         <h2 className="mt-3 text-3xl font-bold md:text-4xl">
           Featured projects
         </h2>
+
         <p className="mt-4 max-w-2xl leading-7 text-slate-400">
-          Practical projects demonstrating frontend architecture, state
-          management and AI integration.
+          Practical applications demonstrating frontend architecture, state
+          management, API integration and AI engineering fundamentals.
         </p>
 
-        <div className="mt-8 grid gap-6 md:grid-cols-2">
-          <article className="rounded-2xl border border-slate-800 bg-slate-900 p-6 transition hover:border-cyan-400">
-            <p className="text-sm tracking-widest text-cyan-400">
-              PROJECT 01
-            </p>
-            <h3 className="mt-3 text-xl font-semibold">
+        <div className="mt-10 grid gap-6 md:grid-cols-2">
+          {/* Project 1 */}
+          <article className="group flex flex-col rounded-2xl border border-slate-800 bg-slate-900 p-6 transition duration-300 hover:-translate-y-1 hover:border-cyan-400">
+            <div className="flex items-center justify-between gap-3">
+              <span className="text-sm font-medium tracking-widest text-cyan-400">
+                PROJECT 01
+              </span>
+              <span className="rounded-full border border-slate-700 px-3 py-1 text-xs text-slate-400">
+                In development
+              </span>
+            </div>
+
+            <h3 className="mt-5 text-2xl font-semibold">
               AI-powered assistant
             </h3>
+
             <p className="mt-3 leading-7 text-slate-400">
-              An interactive AI application exploring streaming responses,
-              API integration and modern React patterns.
+              A conversational AI application exploring prompt handling,
+              simulated responses, API integration and user-friendly loading
+              and error states.
             </p>
-            <div className="mt-5 flex flex-wrap gap-2">
-              {["Next.js", "TypeScript", "AI"].map((technology) => (
+
+            <div className="mt-5">
+              <h4 className="text-sm font-semibold text-slate-200">
+                Engineering focus
+              </h4>
+              <ul className="mt-3 list-inside list-disc space-y-2 text-sm text-slate-400">
+                <li>Next.js App Router and TypeScript</li>
+                <li>Secure server-side API integration</li>
+                <li>Loading, validation and error handling</li>
+              </ul>
+            </div>
+
+            <div className="mt-6 flex flex-wrap gap-2">
+              {["Next.js", "TypeScript", "AI integration"].map((technology) => (
                 <span
                   key={technology}
-                  className="rounded bg-slate-800 px-3 py-1 text-xs"
+                  className="rounded-md bg-slate-800 px-3 py-2 text-xs text-slate-300"
                 >
                   {technology}
                 </span>
               ))}
             </div>
+
+            <div className="mt-auto flex flex-wrap gap-4 pt-8">
+              <a
+                href="https://github.com/eshant2010/frontend-portfolio"
+                target="_blank"
+                rel="noreferrer"
+                className="text-sm font-medium text-cyan-400 transition hover:text-cyan-300"
+              >
+                View repository ↗
+              </a>
+              <span className="text-sm text-slate-500">
+                Live demo coming soon
+              </span>
+            </div>
           </article>
 
-          <article className="rounded-2xl border border-slate-800 bg-slate-900 p-6 transition hover:border-cyan-400">
-            <p className="text-sm tracking-widest text-cyan-400">
-              PROJECT 02
-            </p>
-            <h3 className="mt-3 text-xl font-semibold">
+          {/* Project 2 */}
+          <article className="group flex flex-col rounded-2xl border border-slate-800 bg-slate-900 p-6 transition duration-300 hover:-translate-y-1 hover:border-cyan-400">
+            <div className="flex items-center justify-between gap-3">
+              <span className="text-sm font-medium tracking-widest text-cyan-400">
+                PROJECT 02
+              </span>
+              <span className="rounded-full border border-slate-700 px-3 py-1 text-xs text-slate-400">
+                Planned
+              </span>
+            </div>
+
+            <h3 className="mt-5 text-2xl font-semibold">
               E-commerce experience
             </h3>
+
             <p className="mt-3 leading-7 text-slate-400">
-              A responsive shopping experience focused on reusable components,
-              cart management, API caching and performance.
+              A shopping application planned around reusable product
+              components, cart workflows, API caching and responsive design.
             </p>
-            <div className="mt-5 flex flex-wrap gap-2">
+
+            <div className="mt-5">
+              <h4 className="text-sm font-semibold text-slate-200">
+                Engineering focus
+              </h4>
+              <ul className="mt-3 list-inside list-disc space-y-2 text-sm text-slate-400">
+                <li>Redux Toolkit for cart state</li>
+                <li>RTK Query for API fetching and caching</li>
+                <li>Accessible, responsive user interfaces</li>
+              </ul>
+            </div>
+
+            <div className="mt-6 flex flex-wrap gap-2">
               {["React", "Redux Toolkit", "RTK Query"].map((technology) => (
                 <span
                   key={technology}
-                  className="rounded bg-slate-800 px-3 py-1 text-xs"
+                  className="rounded-md bg-slate-800 px-3 py-2 text-xs text-slate-300"
                 >
                   {technology}
                 </span>
               ))}
+            </div>
+
+            <div className="mt-auto pt-8">
+              <span className="text-sm text-slate-500">
+                Project implementation coming soon
+              </span>
             </div>
           </article>
         </div>
